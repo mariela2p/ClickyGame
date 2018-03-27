@@ -2,11 +2,14 @@ import React from 'react';
 import './Header.css'
 
 const Header = props => (
-        <div>
+        <div className="header">
             <div className="row App-header">
-                <h2 className="col-sm text-center header-text">Clicky Game</h2>
-                <h5 className="col-sm text-center header-text">Click on an image to earn points, but don't click on any more than once!</h5>
-                <h3 className="col-sm text-center header-text">Score: {props.score} | Top Score: {props.topScore} </h3>
+                <h2 className="col-md-4 text-center header-name">Clicky Game</h2>
+                <h5 className="col-md-8 text-center header-text">Click on an image to earn points, but don't click on any more than once!</h5>
+            </div>
+            <div className="row game-score">
+                <h3 className="col-md">Score: {props.score}</h3>
+                <h3 className="col-md">Top Score: {props.topScore}</h3>
             </div>
         </div>
 );
